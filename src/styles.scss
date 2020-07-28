@@ -1,1 +1,237 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  background: #f7f7f7;
+}
+
+#header {
+  background: #070707;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  max-height: 10vh;
+  display: flex;
+}
+
+#crop {
+  width: 15vw;
+  height: 15vmin;
+  overflow: hidden;
+  margin: 0;
+}
+
+#header-img {
+  margin: -10vmin auto -5vmin auto;
+  width: 15vw;
+  height: 10vmin;
+  object-fit: cover;
+  filter: invert(100%);
+}
+
+#nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 80vw;
+}
+
+.nav-link {
+  padding: .5em;
+  font-family: Staatliches;
+  color: #eee;
+  text-decoration: none;
+  transition: 400ms all ease;
+}
+
+.nav-link:hover {
+  color: #000;
+  background-color: #eee;
+}
+
+#main {
+  margin: 10vh 0 0 0;
+}
+
+#title {
+  padding: 1em;
+  font-family: Staatliches;
+  font-size: 3em;
+  text-align: center;
+}
+
+#background-div {
+  background-image: url("https://images.unsplash.com/photo-1525548002014-e18135d814d7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&dpr=1&auto=format&q=80&cs=tinysrgb");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  color: #fff;
+}
+
+#email,
+#subscribe {
+  display: block;
+  margin: 1.2em auto;
+  border: 0;
+  border-radius: 1em;
+  color: #fff;
+  font-family: Raleway;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+#email {
+  background-color: rgba(55,55,255,0.3);
+  width: 35vw;
+  text-align: center;
+  transition: 400ms all ease;
+}
+#email:hover,
+#email:focus {
+  background-color: rgba(55,55,255,1);
+}
+#subscribe {
+  background-color: rgba(255,196,20,0.8);
+  color: #000;
+  transition: 400ms all ease;
+}
+#subscribe:hover {
+  background-color: rgba(255,196,20,1);
+  box-shadow: 1px 1px 5px rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+
+#subscribers {
+  h2 {
+    font-family: Staatliches;
+    text-align: left;
+    padding-left: 1em;
+  }
+  ul {
+    list-style-type: none;
+  }
+  li {
+    font-family: Raleway;
+  }
+}
+
+h2 {
+  font-family: 'Major Mono Display';
+  font-size: 1.7em;
+  text-align: center;
+}
+h3 {
+  font-family: 'Source Sans Pro';
+  font-size: 1.4em;
+}
+
+#whatsnew {
+  margin: 0 auto;
+  max-width: 80vw;
+}
+
+#whatsnew h3,
+#whatsnew p {
+  margin: 0 0 .4em 0;
+  font-family: 'Source Sans Pro';
+}
+
+.wrapper {
+  display: flex;
+  max-width: 80vw;
+}
+
+.right {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin: auto 0 auto 5vw;
+}
+
+hr {
+  border: transparent;
+  margin: 1.6em auto 2em auto;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+}
+
+.fa, .fab, .fas {
+  max-width: 10vw;
+  font-size: 8vmin;
+  color: rgba(255,196,20,0.8);
+}
+
+@media (max-width: 600px)
+{
+  .fa, .fab, .fas {
+    max-width: 10vw;
+    font-size: 12vmin;
+    color: rgba(255,196,20,0.8);
+  }
+  .right {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: auto 0 auto 10vw;
+  }
+}
+
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 30vw;
+  margin: auto;
+  text-align: center;
+  font-family: 'Source Sans Pro';
+
+  img {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    border: 0;
+    padding: 0.8em;
+    background-color: rgba(255,196,20,0.8);
+    color: #fff;
+    font-size: 1.1em;
+    text-align: center;
+    cursor: pointer;
+    transition: 400ms all ease;
+  }
+
+  button:hover {
+    background-color: rgba(255, 180, 0, 1);
+  }
+}
+
+.price {
+  color: #777;
+  font-size: 1.4em;
+}
+
+#footer{
+  margin: 1em auto 1em auto;
+  color: #555;
+  font-family: 'Source Sans Pro';
+  font-size: 0.8em;
+  text-align: center;
+}
+

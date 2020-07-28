@@ -5,6 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
+
 export class AppComponent {
-  title = 'my-app';
+  subscriberList = [];
+
+  addSubscriber(newSubscriber : HTMLInputElement) {
+    if (newSubscriber.value.length > 0) {
+      this.subscriberList = [...this.subscriberList, newSubscriber.value];
+      newSubscriber.value = '';
+    }
+  }
 }
